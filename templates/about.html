@@ -1,0 +1,357 @@
+{% extends "base.html" %} {% block title %}Acerca de Nosotros - Empresa Agrícola{% endblock %} {% block content %}
+<div class="about-container">
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Acerca de Nosotros</h1>
+            <p class="hero-subtitle">Conoce más sobre nuestra empresa y nuestro compromiso con la excelencia agrícola</p>
+        </div>
+    </section>
+
+    <div class="about-content">
+        <section class="about-section">
+            <div class="section-header">
+                <i class="fas fa-users"></i>
+                <h2>Quiénes Somos</h2>
+            </div>
+            <p>Somos una empresa líder en la venta de productos agrícolas con más de 10 años de experiencia en el sector. Nuestro equipo está compuesto por profesionales apasionados por la agricultura y comprometidos con la excelencia.</p>
+        </section>
+
+        <div class="values-grid">
+            <section class="value-card">
+                <div class="card-icon">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <h3>Nuestra Misión</h3>
+                <p>Brindar productos agrícolas de alta calidad y un servicio excepcional a nuestros clientes, contribuyendo al desarrollo sostenible del sector agrícola.</p>
+            </section>
+
+            <section class="value-card">
+                <div class="card-icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <h3>Nuestra Visión</h3>
+                <p>Ser reconocidos como líderes en el sector agrícola, innovando y mejorando continuamente nuestros productos y servicios para satisfacer las necesidades de nuestros clientes.</p>
+            </section>
+        </div>
+
+        <section class="contact-section">
+            <div class="section-header">
+                <i class="fas fa-envelope"></i>
+                <h2>Contacto</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Correo Electrónico</h4>
+                        <p>contacto@empresa.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Ubicación</h4>
+                        <p>Calle Falsa 123, Ciudad Agrícola</p>
+                    </div>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Teléfono</h4>
+                        <p>+123 456 7890</p>
+                    </div>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Horario de Atención</h4>
+                        <p>Lunes a Viernes: 8:00 am - 6:00 pm</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-section">
+            <div class="section-header">
+                <i class="fas fa-hashtag"></i>
+                <h2>Redes Sociales</h2>
+            </div>
+            <p>Síguenos en nuestras redes sociales para estar al tanto de nuestras novedades y promociones especiales.</p>
+
+            <div class="social-grid">
+                <a href="https://www.facebook.com/empresa" target="_blank" class="social-link facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+
+                <a href="https://www.twitter.com/empresa" target="_blank" class="social-link twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+
+                <a href="https://www.instagram.com/empresa" target="_blank" class="social-link instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+
+                <a href="#" class="social-link youtube">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+
+                <a href="#" class="social-link linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </section>
+    </div>
+</div>
+
+<style>
+    /* Variables de colores */
+    
+     :root {
+        --primary: #2e7d32;
+        --primary-dark: #1b5e20;
+        --primary-light: #4caf50;
+        --accent: #ff9800;
+        --text: #333333;
+        --text-light: #666666;
+        --background: #f8f9fa;
+        --card-bg: #ffffff;
+        --border: #e0e0e0;
+    }
+    
+    .about-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .hero-section {
+        background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+        border-radius: 0 0 20px 20px;
+        margin-bottom: 40px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+        opacity: 0.9;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 60px;
+    }
+    
+    .about-section,
+    .contact-section,
+    .social-section {
+        background: var(--card-bg);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+    
+    .section-header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 25px;
+        color: var(--primary);
+    }
+    
+    .section-header i {
+        font-size: 1.8rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.8rem;
+        margin: 0;
+    }
+    
+    .values-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+    
+    .value-card {
+        background: var(--card-bg);
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+    
+    .value-card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .card-icon {
+        width: 70px;
+        height: 70px;
+        background: rgba(46, 125, 50, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+    }
+    
+    .card-icon i {
+        font-size: 2rem;
+        color: var(--primary);
+    }
+    
+    .value-card h3 {
+        color: var(--primary);
+        margin-bottom: 15px;
+        font-size: 1.4rem;
+    }
+    
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    
+    .contact-method {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+        background: rgba(46, 125, 50, 0.05);
+        border-radius: 8px;
+    }
+    
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+        background: var(--primary);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+    
+    .contact-icon i {
+        font-size: 1.2rem;
+    }
+    
+    .contact-info h4 {
+        margin: 0 0 5px;
+        color: var(--primary);
+    }
+    
+    .contact-info p {
+        margin: 0;
+        color: var(--text-light);
+    }
+    
+    .social-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+    }
+    
+    .social-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 15px;
+        border-radius: 8px;
+        color: white;
+        text-decoration: none;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .social-link:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .social-link i {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+    
+    .social-link span {
+        font-weight: 500;
+    }
+    
+    .facebook {
+        background: #3b5998;
+    }
+    
+    .twitter {
+        background: #1da1f2;
+    }
+    
+    .instagram {
+        background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    }
+    
+    .youtube {
+        background: #ff0000;
+    }
+    
+    .linkedin {
+        background: #0077b5;
+    }
+    /* Responsive */
+    
+    @media (max-width: 768px) {
+        .hero-section {
+            padding: 40px 20px;
+        }
+        .hero-section h1 {
+            font-size: 2.2rem;
+        }
+        .section-header {
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+        }
+        .values-grid {
+            grid-template-columns: 1fr;
+        }
+        .contact-grid {
+            grid-template-columns: 1fr;
+        }
+        .social-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+</style>
+{% endblock %}
